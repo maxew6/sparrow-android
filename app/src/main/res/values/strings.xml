@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Sparrow</string>
+
+    <!-- Onboarding: step 1 — meet Sparrow -->
+    <string name="onboarding_meet_title">Hello! I\'m Sparrow. What should I call you?</string>
+    <string name="onboarding_name_hint">Your name</string>
+    <string name="onboarding_name_error_blank">Please enter a name so Sparrow knows what to call you.</string>
+    <string name="onboarding_name_error_length">Names can be up to %1$d characters.</string>
+    <string name="action_continue">Continue</string>
+
+    <!-- Onboarding: step 2 — overlay permission -->
+    <string name="onboarding_permission_title">Sparrow needs permission to appear on your home screen and over other apps. Android calls this \"Display over other apps.\" You can stop Sparrow at any time.</string>
+    <string name="onboarding_permission_privacy">Sparrow only draws a small bird on your screen. It cannot see or read anything in other apps, and nothing ever leaves your device.</string>
+    <string name="action_allow_overlay">Allow overlay</string>
+    <string name="action_not_now">Not now</string>
+
+    <!-- Onboarding: step 3 — start -->
+    <string name="onboarding_ready_title">Everything is ready. Let Sparrow fly?</string>
+    <string name="action_start_sparrow">Start Sparrow</string>
+    <string name="action_open_settings">Settings</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Sparrow is flying</string>
+    <string name="notification_text">Your floating pet is active</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_resume">Resume</string>
+    <string name="notification_action_stop">Stop</string>
+    <string name="notification_action_settings">Settings</string>
+    <string name="notification_channel_name">Sparrow status</string>
+    <string name="notification_channel_description">Shows that Sparrow\'s floating pet is running, with pause, settings, and stop actions.</string>
+
+    <!-- Speech bubbles -->
+    <string name="default_friend_name">friend</string>
+    <string name="greeting_hello">Hello, %1$s!</string>
+    <string name="greeting_morning">Good morning, %1$s!</string>
+    <string name="battery_charging">We\'re charging! Battery is at %1$d%%.</string>
+    <string name="battery_full">Fully charged! Ready to fly.</string>
+    <string name="battery_high">Battery is at %1$d%%.</string>
+    <string name="battery_mid">Battery is at %1$d%%. We\'re doing fine.</string>
+    <string name="battery_low">Only %1$d%% left. Time for a charge!</string>
+
+    <!-- Long-press menu -->
+    <string name="menu_greet_me">Greet me</string>
+    <string name="menu_battery_status">Battery status</string>
+    <string name="menu_pause_movement">Pause movement</string>
+    <string name="menu_resume_movement">Resume movement</string>
+    <string name="menu_open_settings">Open settings</string>
+    <string name="menu_stop_sparrow">Stop Sparrow</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Sparrow settings</string>
+    <string name="settings_status_running">Sparrow is running</string>
+    <string name="settings_status_stopped">Sparrow is stopped</string>
+    <string name="settings_change_name">Change name</string>
+    <string name="settings_pet_size">Pet size</string>
+    <string name="settings_pet_size_small">Small</string>
+    <string name="settings_pet_size_medium">Medium</string>
+    <string name="settings_pet_size_large">Large</string>
+    <string name="settings_auto_movement">Automatic movement</string>
+    <string name="settings_movement_frequency">Movement frequency</string>
+    <string name="settings_greetings">Greetings</string>
+    <string name="settings_battery_messages">Battery messages</string>
+    <string name="settings_reduced_motion">Reduced motion</string>
+    <string name="settings_reset_position">Reset Sparrow position</string>
+    <string name="settings_overlay_permission">Overlay permission</string>
+    <string name="settings_privacy_info">Privacy information</string>
+    <string name="settings_privacy_body">Sparrow works entirely offline, stores your name and preferences only on this device, and never inspects content in other apps.</string>
+</resources>

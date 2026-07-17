@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lets Sparrow draw its floating pet window over other apps. -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Required to run the overlay as a foreground service with a
+         persistent notification. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Sparrow's foreground service doesn't fit an existing FGS type
+         (media, location, camera, etc.) — "specialUse" is Android's
+         designated category for cases like a floating overlay pet, and
+         requires the declared subtype below (see PROPERTY_SPECIAL_USE_FGS_SUBTYPE). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Android 13+ requires this to actually show the persistent
+         foreground-service notification; without it the service still runs
+         but the required notification would be silently suppressed. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".SparrowApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sparrow"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Sparrow"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".overlay.SparrowOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Floating virtual-pet overlay requested and controlled by the user" />
+        </service>
+
+        <receiver
+            android:name=".receiver.SparrowActionReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

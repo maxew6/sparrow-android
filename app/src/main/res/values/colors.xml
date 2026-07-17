@@ -1,0 +1,26 @@
+<resources>
+    <!-- Sparrow palette -->
+    <color name="sparrow_body_brown">#8D6748</color>
+    <color name="sparrow_belly_cream">#F3E5D0</color>
+    <color name="sparrow_wing_brown">#6E4F35</color>
+    <color name="sparrow_tail_dark">#4E3826</color>
+    <color name="sparrow_beak_orange">#C97C3D</color>
+    <color name="sparrow_eye_charcoal">#2B2521</color>
+
+    <!-- App theme -->
+    <color name="primary">#8D6748</color>
+    <color name="primary_container">#F3E5D0</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="background_light">#FFFBF6</color>
+    <color name="background_dark">#1E1A16</color>
+    <color name="surface_light">#FFF6EC</color>
+    <color name="surface_dark">#2A2420</color>
+
+    <!-- Speech bubble -->
+    <color name="bubble_light_bg">#FFFFFF</color>
+    <color name="bubble_light_text">#2B2521</color>
+    <color name="bubble_dark_bg">#332C26</color>
+    <color name="bubble_dark_text">#F3E5D0</color>
+
+    <color name="ic_launcher_background">#F3E5D0</color>
+</resources>
